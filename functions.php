@@ -2,10 +2,10 @@
 
 /**
  * Plugin Name: WP-REST-Allow-All-CORS
- * Plugin URI: http://AhmadAwais.com/
+ * Plugin URI: https://github.com/kochax/wp-rest-allow-all-cors
  * Description: Allow all cross origin requests to your WordPress site's REST API.
  * Author: Jovan Kočić <kochax94@gmail.com>
- * Author URI: http://AhmadAwais.com/
+ * Author URI: https://github.com/kochax/wp-rest-allow-all-cors
  * Version: 1.0.0
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -22,7 +22,6 @@ add_action('init', 'handle_preflight');
 
 function handle_preflight()
 {
-
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE");
     header("Access-Control-Allow-Credentials: true");
